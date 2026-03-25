@@ -1,0 +1,22 @@
+{{ define "title" }}{{ .Title }} | {{ .Site.Title }}{{ end }}
+
+{{ define "header" }}{{ partial "qooee-header.html" . }}{{ end }}
+
+{{ define "main" }}
+<section class="qooee-section qooee-section--single">
+  <article class="qooee-shell qooee-single">
+    <header class="qooee-single__head">
+      <p class="qooee-eyebrow">Qooee Contacts</p>
+      <h1 class="qooee-single__title">{{ .Title }}</h1>
+      {{ with .Description }}
+      <p class="qooee-single__lede">{{ . }}</p>
+      {{ end }}
+    </header>
+    <div class="qooee-single__body">
+      {{ .Content }}
+    </div>
+  </article>
+</section>
+{{ end }}
+
+{{ define "footer" }}{{ partial "qooee-footer.html" . }}{{ end }}

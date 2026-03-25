@@ -205,6 +205,10 @@ body.qooee-body {
   position: relative;
 }
 
+.qooee-shot-stack {
+  min-height: 700px;
+}
+
 .qooee-mockup::before,
 .qooee-preview__canvas::before {
   background: radial-gradient(circle, rgba(215, 228, 227, 0.8), transparent 70%);
@@ -224,6 +228,48 @@ body.qooee-body {
   border-radius: 24px;
   position: relative;
   z-index: 1;
+}
+
+.qooee-shot {
+  background: rgba(250, 248, 243, 0.94);
+  border: 1px solid rgba(47, 52, 55, 0.08);
+  border-radius: 28px;
+  box-shadow: 0 24px 50px rgba(31, 35, 38, 0.16);
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.qooee-shot img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.qooee-shot--primary {
+  margin-left: auto;
+  max-width: 360px;
+}
+
+.qooee-shot--floating-top,
+.qooee-shot--floating-bottom {
+  max-width: 220px;
+  position: absolute;
+}
+
+.qooee-shot--floating-top {
+  left: 8px;
+  top: 48px;
+  transform: rotate(-7deg);
+  z-index: 2;
+}
+
+.qooee-shot--floating-bottom {
+  bottom: 30px;
+  left: 76px;
+  transform: rotate(8deg);
+  z-index: 2;
 }
 
 .qooee-mockup__toolbar {
@@ -449,6 +495,35 @@ body.qooee-body {
   gap: 22px;
 }
 
+.qooee-preview__shots {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.qooee-preview-card {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid var(--qooee-border);
+  border-radius: 30px;
+  display: grid;
+  gap: 18px;
+  padding: 18px;
+}
+
+.qooee-preview-card h3 {
+  color: var(--qooee-charcoal);
+  font-size: 1.15rem;
+  letter-spacing: -0.03em;
+  margin: 0;
+}
+
+.qooee-preview-card p {
+  color: rgba(47, 52, 55, 0.82);
+  font-size: 1rem;
+  line-height: 1.65;
+  margin: 0;
+}
+
 .qooee-preview__canvas {
   align-items: center;
   display: grid;
@@ -562,7 +637,8 @@ body.qooee-body {
 @media (max-width: 1080px) {
   .qooee-hero__grid,
   .qooee-preview__canvas,
-  .qooee-grid--four {
+  .qooee-grid--four,
+  .qooee-preview__shots {
     grid-template-columns: 1fr;
   }
 
@@ -605,6 +681,23 @@ body.qooee-body {
   .qooee-preview__phone {
     max-width: 280px;
   }
+
+  .qooee-shot-stack {
+    min-height: 0;
+    padding-top: 34px;
+  }
+
+  .qooee-shot--primary,
+  .qooee-shot--floating-top,
+  .qooee-shot--floating-bottom {
+    margin: 0 auto;
+    max-width: 320px;
+    position: relative;
+    top: auto;
+    left: auto;
+    bottom: auto;
+    transform: none;
+  }
 }
 
 @media (max-width: 720px) {
@@ -646,7 +739,8 @@ body.qooee-body {
   .qooee-card,
   .qooee-step,
   .qooee-compare,
-  .qooee-note {
+  .qooee-note,
+  .qooee-preview-card {
     padding: 18px;
   }
 }

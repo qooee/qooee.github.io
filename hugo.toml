@@ -34,6 +34,11 @@ disableKinds = ["RSS", "taxonomy", "term"]
     weight = 20
 
   [[menu.main]]
+    name = "Pricing"
+    pageRef = "/pricing"
+    weight = 25
+
+  [[menu.main]]
     name = "Principles"
     url = "/#principles"
     weight = 30

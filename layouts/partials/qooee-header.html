@@ -1,0 +1,17 @@
+{{ $isHome := .IsHome }}
+{{ $isPricing := eq .RelPermalink "/pricing/" }}
+<header class="qooee-header">
+  <div class="qooee-shell">
+    <nav class="qooee-nav" aria-label="Primary">
+      <a class="qooee-wordmark" href="{{ .Site.Home.RelPermalink }}">Qooee</a>
+      <div class="qooee-nav__group">
+        <a class="qooee-nav__link" href="{{ if $isHome }}#product-preview{{ else }}{{ "/#product-preview" | relURL }}{{ end }}">Product</a>
+        <a class="qooee-nav__link" href="{{ if $isHome }}#how-it-works{{ else }}{{ "/#how-it-works" | relURL }}{{ end }}">How it works</a>
+        <a class="qooee-nav__link{{ if $isPricing }} qooee-nav__link--active{{ end }}" href="{{ "/pricing/" | relURL }}">Pricing</a>
+        <a class="qooee-nav__link" href="{{ if $isHome }}#principles{{ else }}{{ "/#principles" | relURL }}{{ end }}">Principles</a>
+        <a class="qooee-nav__link" href="{{ "/sign-in/" | relURL }}">Sign in</a>
+        <a class="qooee-button qooee-button--primary qooee-nav__cta" href="{{ "/get-qooee-contacts/" | relURL }}">Get Qooee Contacts</a>
+      </div>
+    </nav>
+  </div>
+</header>

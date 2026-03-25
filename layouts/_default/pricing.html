@@ -1,0 +1,190 @@
+{{ define "title" }}Pricing | {{ .Site.Title }}{{ end }}
+
+{{ define "header" }}{{ partial "qooee-header.html" . }}{{ end }}
+
+{{ define "main" }}
+<div class="qooee-page qooee-page--pricing">
+  <section class="qooee-pricing-hero">
+    <div class="qooee-shell qooee-pricing-hero__inner">
+      <p class="qooee-eyebrow">Pricing</p>
+      <h1 class="qooee-pricing-hero__title">Simple pricing for a quieter way to stay in touch</h1>
+      <p class="qooee-pricing-hero__lede">
+        Qooee Contacts keeps connected people’s contact details up to date. Start free. Upgrade when you want more control over privacy, identity, and how Qooee fits into your workflow.
+      </p>
+      <div class="qooee-actions qooee-actions--centre">
+        <a class="qooee-button qooee-button--primary" href="{{ "/get-qooee-contacts/" | relURL }}">Get started free</a>
+        <a class="qooee-button qooee-button--secondary" href="#compare-plans">Compare plans</a>
+      </div>
+      <p class="qooee-pricing-hero__note">Prices in Australian dollars. Pro is available monthly or annually. Annual pricing offers the lower effective rate.</p>
+    </div>
+  </section>
+
+  <section class="qooee-section qooee-section--pricing-cards">
+    <div class="qooee-shell">
+      <div class="qooee-plan-grid">
+        <article class="qooee-plan-card">
+          <div class="qooee-plan-card__top">
+            <p class="qooee-kicker">Free</p>
+            <h2>A$0</h2>
+            <p>For straightforward professional contact sharing.</p>
+          </div>
+          <ul class="qooee-plan-list">
+            <li>One profile card</li>
+            <li>Connect with other users</li>
+            <li>Automatic contact updates between connected users</li>
+            <li>Accept, remove, or block connections</li>
+            <li>Import contacts</li>
+            <li>Export contacts in standard formats</li>
+            <li>Simple privacy setting</li>
+            <li>Basic history</li>
+          </ul>
+          <a class="qooee-button qooee-button--secondary" href="{{ "/get-qooee-contacts/" | relURL }}">Get started free</a>
+        </article>
+
+        <article class="qooee-plan-card qooee-plan-card--featured">
+          <div class="qooee-plan-card__top">
+            <p class="qooee-kicker">Pro</p>
+            <h2>A$39<span>/year</span></h2>
+            <p class="qooee-plan-card__price-alt">or A$4.99/month</p>
+            <p>For people who want more control over privacy, identity, and how Qooee fits into their contact workflow.</p>
+          </div>
+          <ul class="qooee-plan-list">
+            <li>Everything in free</li>
+            <li>Multiple cards or profiles</li>
+            <li>Granular field-level privacy</li>
+            <li>Per-contact or per-group visibility</li>
+            <li>Fuller change history</li>
+            <li>Advanced native contacts sync</li>
+            <li>Selective sync controls</li>
+            <li>Merge and conflict handling</li>
+            <li>Priority support</li>
+          </ul>
+          <div class="qooee-plan-card__foot">
+            <a class="qooee-button qooee-button--primary" href="{{ "/get-qooee-contacts/" | relURL }}">Upgrade to pro</a>
+            <p>Annual billing is the best value.</p>
+          </div>
+        </article>
+
+        <article class="qooee-plan-card qooee-plan-card--future">
+          <div class="qooee-plan-card__top">
+            <p class="qooee-kicker">Team/business</p>
+            <h2>Coming later</h2>
+            <p>For organisations that want shared contact infrastructure and admin controls.</p>
+          </div>
+          <ul class="qooee-plan-list">
+            <li>Company-managed directories</li>
+            <li>Onboarding and offboarding workflows</li>
+            <li>Admin controls</li>
+            <li>Shared company cards</li>
+            <li>Internal and external visibility settings</li>
+          </ul>
+          <a class="qooee-button qooee-button--secondary" href="mailto:hello@qooee.net?subject=Qooee%20team%20business%20interest">Register interest</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="qooee-section">
+    <div class="qooee-shell qooee-stack">
+      <div class="qooee-section__intro">
+        <p class="qooee-kicker">Privacy and portability</p>
+        <h2>Free is simple. Pro is precise.</h2>
+      </div>
+      <div class="qooee-grid qooee-grid--two">
+        <article class="qooee-card">
+          <h3>Free keeps the essentials simple and portable.</h3>
+          <p>You can import contacts, export them in standard formats, and use Qooee Contacts with a straightforward privacy model.</p>
+        </article>
+        <article class="qooee-card">
+          <h3>Pro adds finer control.</h3>
+          <p>Field-level privacy, multiple cards, and advanced native contacts sync give you more control over what gets shared, synced, and kept current.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="qooee-section qooee-section--comparison" id="compare-plans">
+    <div class="qooee-shell qooee-stack">
+      <div class="qooee-section__intro">
+        <p class="qooee-kicker">Compare plans</p>
+        <h2>What changes between free and pro</h2>
+      </div>
+      <div class="qooee-compare-table" role="table" aria-label="Qooee Contacts pricing comparison">
+        <div class="qooee-compare-table__row qooee-compare-table__row--head" role="row">
+          <div class="qooee-compare-table__cell qooee-compare-table__cell--feature" role="columnheader">Feature</div>
+          <div class="qooee-compare-table__cell" role="columnheader">Free</div>
+          <div class="qooee-compare-table__cell" role="columnheader">Pro</div>
+          <div class="qooee-compare-table__cell" role="columnheader">Team/business</div>
+        </div>
+        {{ $rows := slice
+          (dict "feature" "Create account and identity card" "free" "Included" "pro" "Included" "team" "Later")
+          (dict "feature" "Connect with other users" "free" "Included" "pro" "Included" "team" "Later")
+          (dict "feature" "Automatic contact updates" "free" "Included" "pro" "Included" "team" "Later")
+          (dict "feature" "Import contacts" "free" "Included" "pro" "Included" "team" "Later")
+          (dict "feature" "Export contacts in standard formats" "free" "Included" "pro" "Included" "team" "Later")
+          (dict "feature" "One profile card" "free" "Included" "pro" "Included" "team" "Later")
+          (dict "feature" "Multiple cards or profiles" "free" "No" "pro" "Included" "team" "Later")
+          (dict "feature" "Simple privacy setting" "free" "Included" "pro" "Included" "team" "Later")
+          (dict "feature" "Granular field-level privacy" "free" "No" "pro" "Included" "team" "Later")
+          (dict "feature" "Per-contact visibility" "free" "No" "pro" "Included" "team" "Later")
+          (dict "feature" "Groups or audiences" "free" "No" "pro" "Included" "team" "Later")
+          (dict "feature" "Basic history" "free" "Included" "pro" "Included" "team" "Later")
+          (dict "feature" "Fuller change history" "free" "No" "pro" "Included" "team" "Later")
+          (dict "feature" "Advanced native contacts sync" "free" "No" "pro" "Included" "team" "Later")
+          (dict "feature" "Selective sync controls" "free" "No" "pro" "Included" "team" "Later")
+          (dict "feature" "Merge and conflict handling" "free" "No" "pro" "Included" "team" "Later")
+          (dict "feature" "Priority support" "free" "No" "pro" "Included" "team" "Later")
+        }}
+        {{ range $rows }}
+        <div class="qooee-compare-table__row" role="row">
+          <div class="qooee-compare-table__cell qooee-compare-table__cell--feature" role="cell">{{ .feature }}</div>
+          <div class="qooee-compare-table__cell" role="cell"><span class="qooee-compare-table__label">Free</span>{{ .free }}</div>
+          <div class="qooee-compare-table__cell" role="cell"><span class="qooee-compare-table__label">Pro</span>{{ .pro }}</div>
+          <div class="qooee-compare-table__cell" role="cell"><span class="qooee-compare-table__label">Team/business</span>{{ .team }}</div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="qooee-section">
+    <div class="qooee-shell qooee-stack">
+      <div class="qooee-section__intro">
+        <p class="qooee-kicker">FAQ</p>
+        <h2>Short answers, up front</h2>
+      </div>
+      <div class="qooee-grid qooee-grid--two">
+        <article class="qooee-card qooee-faq-card">
+          <h3>Do I need to pay to use Qooee Contacts?</h3>
+          <p>No. The core product is free to use.</p>
+        </article>
+        <article class="qooee-card qooee-faq-card">
+          <h3>Can I import my existing contacts for free?</h3>
+          <p>Yes. Importing contacts is included in the free plan.</p>
+        </article>
+        <article class="qooee-card qooee-faq-card">
+          <h3>Can I export my data if I stop using Qooee?</h3>
+          <p>Yes. Free includes export in standard formats.</p>
+        </article>
+        <article class="qooee-card qooee-faq-card">
+          <h3>What does pro add?</h3>
+          <p>Pro adds more control over privacy, multiple cards or profiles, fuller history, and advanced native contacts sync with more control over merging and visibility.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="qooee-cta">
+    <div class="qooee-shell qooee-cta__inner">
+      <p class="qooee-kicker">Start simple</p>
+      <h2>Start with free, upgrade when you need more control</h2>
+      <div class="qooee-actions qooee-actions--centre">
+        <a class="qooee-button qooee-button--primary" href="{{ "/get-qooee-contacts/" | relURL }}">Get started free</a>
+        <a class="qooee-button qooee-button--secondary" href="mailto:hello@qooee.net?subject=Qooee%20team%20business%20interest">Register interest for team/business</a>
+      </div>
+    </div>
+  </section>
+</div>
+{{ end }}
+
+{{ define "footer" }}{{ partial "qooee-footer.html" . }}{{ end }}

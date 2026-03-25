@@ -3,17 +3,17 @@ title = "Privacy"
 description = "Privacy policy for Qooee Contacts."
 +++
 
-# qooee contacts privacy policy
+# Qooee Contacts privacy policy
 
 **effective date:** 26 Mar 2026  
-**app:** qooee contacts (the “app”)  
+**app:** Qooee Contacts (the “app”)  
 **provider:** evil robots pty ltd (abn 21 667 313 911) (referred to in this policy as “qooee”, “we”, “us”)  
 **contact:** [hello@qooee.net](mailto:hello@qooee.net)  
 **address:** evil robots pty ltd, po box 201, berowra heights nsw 2082, australia
 
 ## 1) overview
 
-qooee contacts helps you capture, organise, and keep professional contact details up to date.
+Qooee Contacts helps you capture, organise, and keep professional contact details up to date.
 
 this policy explains what information we collect, how we use it, and the choices you have.
 
@@ -86,7 +86,7 @@ we may use aggregated or de-identified information for analytics and product imp
 
 ## 6) connections and sharing
 
-qooee contacts can support sharing of contact updates between people who are connected in the app.
+Qooee Contacts can support sharing of contact updates between people who are connected in the app.
 
 * if you choose to connect with someone, **your shareable contact details may be shared with them**, and updates you make may be reflected for them, subject to your settings and theirs.
 * you can typically **disconnect or block** other users using in-app controls.

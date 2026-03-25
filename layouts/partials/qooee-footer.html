@@ -1,0 +1,19 @@
+{{ $isHome := .IsHome }}
+<footer class="qooee-footer" role="contentinfo">
+  <div class="qooee-shell qooee-footer__inner">
+    <div>
+      <a class="qooee-wordmark qooee-wordmark--footer" href="{{ .Site.Home.RelPermalink }}">Qooee</a>
+      <p class="qooee-footer__note">Quiet infrastructure for professional relationships.</p>
+    </div>
+    <div class="qooee-footer__links">
+      <a href="{{ if $isHome }}#product-preview{{ else }}{{ "/#product-preview" | relURL }}{{ end }}">Product</a>
+      <a href="{{ "/pricing/" | relURL }}">Pricing</a>
+      <a href="{{ "/privacy/" | relURL }}">Privacy</a>
+      <a href="{{ "/terms/" | relURL }}">Terms</a>
+      <a href="{{ "/sign-in/" | relURL }}">Sign in</a>
+    </div>
+  </div>
+  <div class="qooee-shell">
+    <p class="qooee-footer__legal">Qooee is a product of evil robots pty ltd (ABN 21667313911)</p>
+  </div>
+</footer>

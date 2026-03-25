@@ -1,21 +1,6 @@
 {{ define "title" }}Qooee Contacts | {{ .Site.Title }}{{ end }}
 
-{{ define "header" }}
-<header class="qooee-header">
-  <div class="qooee-shell">
-    <nav class="qooee-nav" aria-label="Primary">
-      <a class="qooee-wordmark" href="{{ .Site.Home.RelPermalink }}">Qooee</a>
-      <div class="qooee-nav__group">
-        <a class="qooee-nav__link" href="#product-preview">Product</a>
-        <a class="qooee-nav__link" href="#how-it-works">How it works</a>
-        <a class="qooee-nav__link" href="#principles">Principles</a>
-        <a class="qooee-nav__link" href="{{ "/sign-in/" | relURL }}">Sign in</a>
-        <a class="qooee-button qooee-button--primary qooee-nav__cta" href="{{ "/get-qooee-contacts/" | relURL }}">Get Qooee Contacts</a>
-      </div>
-    </nav>
-  </div>
-</header>
-{{ end }}
+{{ define "header" }}{{ partial "qooee-header.html" . }}{{ end }}
 
 {{ define "main" }}
 <div class="qooee-page">
@@ -25,7 +10,7 @@
         <p class="qooee-eyebrow">A quieter way to keep in touch</p>
         <h1 class="qooee-hero__title">Keep your contacts current</h1>
         <p class="qooee-hero__lede">
-          Qooee Contacts is a privacy-first address book for managing your card, requests, and updates without the usual social noise. Share your details by link or QR code, accept trusted connections, and keep the important bits current.
+          Qooee Contacts is a networked address book for professionals who want useful relationships without social noise. Share your details by link or QR code, connect with people you know, and keep the important bits current.
         </p>
         <div class="qooee-actions">
           <a class="qooee-button qooee-button--primary" href="{{ "/get-qooee-contacts/" | relURL }}">Get Qooee Contacts</a>
@@ -79,24 +64,24 @@
     <div class="qooee-shell qooee-stack">
       <div class="qooee-section__intro">
         <p class="qooee-kicker">How it works</p>
-        <h2>How Qooee works</h2>
-        <p>Your card, trusted requests, and updates in one place.</p>
+        <h2>How Qooee Contacts works</h2>
+        <p>Your card, trusted connections, and updates in one place.</p>
       </div>
       <div class="qooee-steps">
         <article class="qooee-step">
           <span class="qooee-step__number">1</span>
-          <h3>Create your card once</h3>
+          <h3>Create your card</h3>
           <p>Add the details you want to keep current, then set default sharing for your phone, email, and links.</p>
         </article>
         <article class="qooee-step">
           <span class="qooee-step__number">2</span>
-          <h3>Share it by link or QR code</h3>
-          <p>Invite people you know, accept incoming requests, or add local contacts manually when you need to.</p>
+          <h3>Connect with people you know</h3>
+          <p>Share your card by link or QR code, accept incoming requests, or add local contacts when you need to.</p>
         </article>
         <article class="qooee-step">
           <span class="qooee-step__number">3</span>
-          <h3>Review updates without the noise</h3>
-          <p>See connection requests, recent changes, and optional Apple Contacts sync support from inside the app.</p>
+          <h3>Keep details current</h3>
+          <p>Review requests, recent changes, and optional Apple Contacts sync support without turning it into a feed.</p>
         </article>
       </div>
     </div>
@@ -118,8 +103,8 @@
           <p>Useful for storage, but they rarely help with requests, sharing, or ongoing updates.</p>
         </article>
         <article class="qooee-compare qooee-compare--focus">
-          <h3>Qooee</h3>
-          <p>Built around your card, trusted connections, and update history, quietly.</p>
+          <h3>Qooee Contacts</h3>
+          <p>Built to keep trusted professional contact details current, with clear control and no social layer.</p>
         </article>
       </div>
     </div>
@@ -156,7 +141,7 @@
     <div class="qooee-shell qooee-stack">
       <div class="qooee-section__intro">
         <p class="qooee-kicker">Product preview</p>
-        <h2>The current product, as it exists today</h2>
+        <h2>Inside Qooee Contacts</h2>
       </div>
       <div class="qooee-preview">
         <div class="qooee-preview__shots">
@@ -208,23 +193,4 @@
 </div>
 {{ end }}
 
-{{ define "footer" }}
-<footer class="qooee-footer" role="contentinfo">
-  <div class="qooee-shell qooee-footer__inner">
-    <div>
-      <a class="qooee-wordmark qooee-wordmark--footer" href="{{ .Site.Home.RelPermalink }}">Qooee</a>
-      <p class="qooee-footer__note">Quiet infrastructure for professional relationships.</p>
-    </div>
-    <div class="qooee-footer__links">
-      <a href="#product-preview">Product</a>
-      <a href="#how-it-works">How it works</a>
-      <a href="{{ "/privacy/" | relURL }}">Privacy</a>
-      <a href="{{ "/terms/" | relURL }}">Terms</a>
-      <a href="{{ "/sign-in/" | relURL }}">Sign in</a>
-    </div>
-  </div>
-  <div class="qooee-shell">
-    <p class="qooee-footer__legal">Qooee is a product of evil robots pty ltd (ABN 21667313911)</p>
-  </div>
-</footer>
-{{ end }}
+{{ define "footer" }}{{ partial "qooee-footer.html" . }}{{ end }}

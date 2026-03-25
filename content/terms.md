@@ -3,10 +3,10 @@ title = "Terms"
 description = "Terms of use for Qooee Contacts."
 +++
 
-# qooee contacts terms of use
+# Qooee Contacts terms of use
 
 **effective date:** 26 Mar 2026  
-**app:** qooee contacts (the “app”)  
+**app:** Qooee Contacts (the “app”)  
 **provider:** evil robots pty ltd (abn 21 667 313 911) (“evil robots”, “we”, “us”)  
 **contact:** [hello@qooee.net](mailto:hello@qooee.net)  
 **address:** evil robots pty ltd, po box 201, berowra heights nsw 2082, australia

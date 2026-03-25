@@ -10,8 +10,10 @@ disableKinds = ["RSS", "taxonomy", "term"]
     dir = ":cacheDir/images"
 
 [params]
-  background_color_class = "bg-dark-green"
-  body_classes = "helvetica bg-near-white"
+  background_color_class = "bg-white"
+  body_classes = "qooee-body"
+  custom_css = ["qooee-home.css"]
+  description = "Qooee Contacts keeps trusted professional contact details current without social noise."
   text_color = "near-black"
 
   [params.ananke]
@@ -20,27 +22,23 @@ disableKinds = ["RSS", "taxonomy", "term"]
     [params.ananke.home]
       content_alignment = "left"
 
-    [params.ananke.social.follow]
-      networks = ["github", "linkedin"]
-
-    [params.ananke.social.github]
-      profilelink = "https://github.com/qooee/"
-
-    [params.ananke.social.linkedin]
-      profilelink = "https://www.linkedin.com/company/qooee/"
-
 [menu]
   [[menu.main]]
-    name = "About"
-    pageRef = "/about"
+    name = "Product"
+    url = "/#product-preview"
     weight = 10
 
   [[menu.main]]
-    name = "GitHub"
-    url = "https://github.com/qooee/"
+    name = "How it works"
+    url = "/#how-it-works"
     weight = 20
 
   [[menu.main]]
-    name = "LinkedIn"
-    url = "https://www.linkedin.com/company/qooee/"
+    name = "Principles"
+    url = "/#principles"
     weight = 30
+
+  [[menu.main]]
+    name = "Sign in"
+    pageRef = "/sign-in"
+    weight = 40

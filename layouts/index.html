@@ -1,0 +1,285 @@
+{{ define "title" }}Qooee Contacts | {{ .Site.Title }}{{ end }}
+
+{{ define "header" }}
+<header class="qooee-header">
+  <div class="qooee-shell">
+    <nav class="qooee-nav" aria-label="Primary">
+      <a class="qooee-wordmark" href="{{ .Site.Home.RelPermalink }}">Qooee</a>
+      <div class="qooee-nav__group">
+        <a class="qooee-nav__link" href="#product-preview">Product</a>
+        <a class="qooee-nav__link" href="#how-it-works">How it works</a>
+        <a class="qooee-nav__link" href="#principles">Principles</a>
+        <a class="qooee-nav__link" href="{{ "/sign-in/" | relURL }}">Sign in</a>
+        <a class="qooee-button qooee-button--primary qooee-nav__cta" href="{{ "/get-qooee-contacts/" | relURL }}">Get Qooee Contacts</a>
+      </div>
+    </nav>
+  </div>
+</header>
+{{ end }}
+
+{{ define "main" }}
+<div class="qooee-page">
+  <section class="qooee-hero">
+    <div class="qooee-shell qooee-hero__grid">
+      <div class="qooee-hero__copy">
+        <p class="qooee-eyebrow">A quieter way to keep in touch</p>
+        <h1 class="qooee-hero__title">Keep your contacts current</h1>
+        <p class="qooee-hero__lede">
+          Qooee Contacts is a networked address book for professionals who want useful relationships without social noise. When two people connect, their contact details can stay up to date automatically.
+        </p>
+        <div class="qooee-actions">
+          <a class="qooee-button qooee-button--primary" href="{{ "/get-qooee-contacts/" | relURL }}">Get Qooee Contacts</a>
+          <a class="qooee-button qooee-button--secondary" href="#how-it-works">See how it works</a>
+        </div>
+        <p class="qooee-hero__reassurance">No feeds. No posting. No CRM clutter.</p>
+      </div>
+      <div class="qooee-hero__visual" aria-label="Qooee Contacts interface preview">
+        <div class="qooee-mockup qooee-mockup--hero">
+          <div class="qooee-mockup__window">
+            <div class="qooee-mockup__toolbar">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="qooee-mockup__body">
+              <aside class="qooee-mockup__list">
+                <div class="qooee-mockup__list-title">Trusted contacts</div>
+                <div class="qooee-contact-row qooee-contact-row--active">
+                  <strong>Alex Tan</strong>
+                  <span>Design Director</span>
+                </div>
+                <div class="qooee-contact-row">
+                  <strong>Priya Nair</strong>
+                  <span>Research Lead</span>
+                </div>
+                <div class="qooee-contact-row">
+                  <strong>Sam Doyle</strong>
+                  <span>Product Counsel</span>
+                </div>
+              </aside>
+              <div class="qooee-mockup__panel">
+                <div class="qooee-contact-card">
+                  <div class="qooee-contact-card__top">
+                    <div>
+                      <p class="qooee-label">Contact</p>
+                      <h2>Alex Tan</h2>
+                      <p>Design Director at North Harbour Studio</p>
+                    </div>
+                    <span class="qooee-status">Current</span>
+                  </div>
+                  <dl class="qooee-detail-list">
+                    <div>
+                      <dt>Email</dt>
+                      <dd>alex@northharbour.studio</dd>
+                    </div>
+                    <div>
+                      <dt>Phone</dt>
+                      <dd>+61 4 21 555 018</dd>
+                    </div>
+                    <div>
+                      <dt>Location</dt>
+                      <dd>Sydney, NSW</dd>
+                    </div>
+                  </dl>
+                </div>
+                <div class="qooee-update-card">
+                  <div>
+                    <p class="qooee-label">Recent update</p>
+                    <strong>Work email changed</strong>
+                  </div>
+                  <p>Shared with trusted contacts. Previous address retained in history.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="qooee-section qooee-section--problem" id="problem">
+    <div class="qooee-shell qooee-stack">
+      <div class="qooee-section__intro">
+        <p class="qooee-kicker">The problem</p>
+        <h2>Contact details should not go stale</h2>
+        <p>
+          Most contact tools store information. They do not help maintain it. People change roles, phone numbers, email addresses, and locations. Details drift. Address books decay. Staying in touch becomes admin.
+        </p>
+      </div>
+      <div class="qooee-grid qooee-grid--three">
+        <article class="qooee-card">
+          <h3>Manual upkeep</h3>
+          <p>Updating contacts by hand is slow and easy to ignore.</p>
+        </article>
+        <article class="qooee-card">
+          <h3>Professional drift</h3>
+          <p>People change jobs and details more often than address books can keep up.</p>
+        </article>
+        <article class="qooee-card">
+          <h3>Too much noise elsewhere</h3>
+          <p>Social networks mix contact utility with feeds, performance, and distraction.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="qooee-section" id="how-it-works">
+    <div class="qooee-shell qooee-stack">
+      <div class="qooee-section__intro">
+        <p class="qooee-kicker">How it works</p>
+        <h2>How Qooee works</h2>
+        <p>Mutual connection, clear control, less upkeep.</p>
+      </div>
+      <div class="qooee-steps">
+        <article class="qooee-step">
+          <span class="qooee-step__number">1</span>
+          <h3>Connect with someone you know</h3>
+          <p>Qooee starts with trusted professional relationships, not public discovery.</p>
+        </article>
+        <article class="qooee-step">
+          <span class="qooee-step__number">2</span>
+          <h3>Choose what contact details you share</h3>
+          <p>You control which details are visible and who can see them.</p>
+        </article>
+        <article class="qooee-step">
+          <span class="qooee-step__number">3</span>
+          <h3>Their saved details stay current</h3>
+          <p>When something changes, trusted contacts can receive the updated version cleanly.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="qooee-section qooee-section--contrast" id="difference">
+    <div class="qooee-shell qooee-stack">
+      <div class="qooee-section__intro">
+        <p class="qooee-kicker">Differentiation</p>
+        <h2>Not a social network. Not a CRM.</h2>
+      </div>
+      <div class="qooee-grid qooee-grid--three">
+        <article class="qooee-compare">
+          <h3>LinkedIn</h3>
+          <p>Built for visibility, posting, and public professional identity.</p>
+        </article>
+        <article class="qooee-compare">
+          <h3>Contacts apps</h3>
+          <p>Good for storing details, but mostly manual and local.</p>
+        </article>
+        <article class="qooee-compare qooee-compare--focus">
+          <h3>Qooee</h3>
+          <p>Built to keep trusted professional contact details current, quietly.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="qooee-section" id="principles">
+    <div class="qooee-shell qooee-stack">
+      <div class="qooee-section__intro">
+        <p class="qooee-kicker">Trust and principles</p>
+        <h2>Built for people who dislike noise</h2>
+      </div>
+      <div class="qooee-grid qooee-grid--four">
+        <article class="qooee-principle">
+          <h3>Useful by default</h3>
+          <p>The product should reduce admin, not create a new kind of it.</p>
+        </article>
+        <article class="qooee-principle">
+          <h3>Clear control</h3>
+          <p>You decide what details are shared and with whom.</p>
+        </article>
+        <article class="qooee-principle">
+          <h3>No performative layer</h3>
+          <p>No feed, no posting, no follower logic.</p>
+        </article>
+        <article class="qooee-principle">
+          <h3>Quiet design</h3>
+          <p>Software should help and then get out of the way.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="qooee-section qooee-section--preview" id="product-preview">
+    <div class="qooee-shell qooee-stack">
+      <div class="qooee-section__intro">
+        <p class="qooee-kicker">Product preview</p>
+        <h2>A calm view of the details that matter</h2>
+      </div>
+      <div class="qooee-preview">
+        <div class="qooee-preview__canvas">
+          <div class="qooee-preview__desktop">
+            <div class="qooee-preview__desktop-top">
+              <strong>Qooee Contacts</strong>
+              <span>Shared details</span>
+            </div>
+            <div class="qooee-preview__desktop-body">
+              <div class="qooee-preview__column">
+                <p class="qooee-label">Contact details</p>
+                <ul>
+                  <li><span>Email</span><strong>alex@northharbour.studio</strong></li>
+                  <li><span>Phone</span><strong>+61 4 21 555 018</strong></li>
+                  <li><span>Role</span><strong>Design Director</strong></li>
+                </ul>
+              </div>
+              <div class="qooee-preview__column">
+                <p class="qooee-label">Sharing controls</p>
+                <ul>
+                  <li><span>Mobile</span><strong>Trusted only</strong></li>
+                  <li><span>Work email</span><strong>Shared</strong></li>
+                  <li><span>Home suburb</span><strong>Hidden</strong></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="qooee-preview__phone">
+            <div class="qooee-preview__phone-notch"></div>
+            <div class="qooee-preview__phone-screen">
+              <p class="qooee-label">Update status</p>
+              <h3>Details updated</h3>
+              <p>Priya now has your current work number and email.</p>
+              <span class="qooee-status qooee-status--soft">Shared 2 mins ago</span>
+            </div>
+          </div>
+        </div>
+        <div class="qooee-grid qooee-grid--three qooee-preview__notes">
+          <article class="qooee-note">
+            <h3>Contact details, clearly organised</h3>
+          </article>
+          <article class="qooee-note">
+            <h3>Visible update status</h3>
+          </article>
+          <article class="qooee-note">
+            <h3>Simple control over shared details</h3>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="qooee-cta" id="final-cta">
+    <div class="qooee-shell qooee-cta__inner">
+      <p class="qooee-kicker">Get started</p>
+      <h2>The simplest way to keep in touch</h2>
+      <p>Keep professional contacts current without turning networking into a performance.</p>
+      <a class="qooee-button qooee-button--primary" href="{{ "/get-qooee-contacts/" | relURL }}">Get Qooee Contacts</a>
+    </div>
+  </section>
+</div>
+{{ end }}
+
+{{ define "footer" }}
+<footer class="qooee-footer" role="contentinfo">
+  <div class="qooee-shell qooee-footer__inner">
+    <div>
+      <a class="qooee-wordmark qooee-wordmark--footer" href="{{ .Site.Home.RelPermalink }}">Qooee</a>
+      <p class="qooee-footer__note">Quiet infrastructure for professional relationships.</p>
+    </div>
+    <div class="qooee-footer__links">
+      <a href="#product-preview">Product</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="{{ "/privacy/" | relURL }}">Privacy</a>
+      <a href="{{ "/terms/" | relURL }}">Terms</a>
+      <a href="{{ "/sign-in/" | relURL }}">Sign in</a>
+    </div>
+  </div>
+</footer>
+{{ end }}

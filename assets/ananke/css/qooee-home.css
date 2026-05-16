@@ -720,6 +720,25 @@ body.qooee-body {
   font-weight: 600;
 }
 
+.qooee-plan-card__intro-price {
+  background: var(--qooee-honey-30);
+  border: 1px solid rgba(254, 174, 0, 0.28);
+  border-radius: 8px;
+  color: var(--qooee-navy) !important;
+  display: inline-flex;
+  font-size: 0.95rem !important;
+  font-weight: 700;
+  line-height: 1.4 !important;
+  padding: 8px 10px;
+  width: fit-content;
+}
+
+.qooee-plan-card__fineprint {
+  color: rgba(0, 21, 36, 0.56) !important;
+  font-size: 0.78rem !important;
+  line-height: 1.45 !important;
+}
+
 .qooee-plan-list {
   display: grid;
   gap: 12px;

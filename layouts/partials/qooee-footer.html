@@ -2,7 +2,14 @@
 <footer class="qooee-footer" role="contentinfo">
   <div class="qooee-shell qooee-footer__inner">
     <div>
-      <a class="qooee-wordmark qooee-wordmark--footer" href="{{ .Site.Home.RelPermalink }}">Qooee</a>
+      {{ $wordmark := resources.Get "images/logos/qooee-wordmark-inverse.png" }}
+      <a class="qooee-wordmark qooee-wordmark--footer" href="{{ .Site.Home.RelPermalink }}" aria-label="Qooee home">
+        {{ with $wordmark }}
+          <img class="qooee-wordmark__image" src="{{ .RelPermalink }}" width="300" height="103" alt="Qooee">
+        {{ else }}
+          Qooee
+        {{ end }}
+      </a>
       <p class="qooee-footer__note">Quiet infrastructure for professional relationships.</p>
     </div>
     <div class="qooee-footer__links">

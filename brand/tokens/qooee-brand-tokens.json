@@ -1,0 +1,68 @@
+{
+  "brand": {
+    "honeyYellow": "#FEAE00",
+    "navy": "#001524",
+    "isabelline": "#F6F0ED",
+    "rubyRed": "#A20021"
+  },
+  "secondary": {
+    "steelBlue": "#3F7CAC",
+    "silverPink": "#C1A5A9",
+    "xanadu": "#667761"
+  },
+  "tertiary": {
+    "honey30": "#FFE7B3",
+    "honey15": "#FFF3D9",
+    "ruby30": "#FF97AC",
+    "ruby15": "#FFCBD5",
+    "steelBlue30": "#C3D8E9",
+    "steelBlue15": "#E1ECF4",
+    "platinum": "#ECE4E5",
+    "lightGray": "#D0D7CE"
+  },
+  "semantic": {
+    "text": {
+      "primary": "{brand.navy}",
+      "secondary": "{brand.navy} with reduced opacity",
+      "inverse": "{brand.isabelline}"
+    },
+    "surface": {
+      "primary": "{brand.isabelline}",
+      "card": "#FFFFFF or {brand.isabelline}",
+      "muted": "{tertiary.platinum}"
+    },
+    "border": {
+      "default": "{tertiary.lightGray}"
+    },
+    "button": {
+      "primaryBg": "{brand.navy}",
+      "primaryText": "{brand.isabelline}",
+      "secondaryText": "{brand.navy}"
+    },
+    "accent": {
+      "brand": "{brand.honeyYellow}"
+    },
+    "state": {
+      "error": "{brand.rubyRed}",
+      "warningBg": "{tertiary.honey30}",
+      "infoBg": "{tertiary.steelBlue15}"
+    }
+  },
+  "space": {
+    "1": "4px",
+    "2": "8px",
+    "3": "12px",
+    "4": "16px",
+    "5": "24px",
+    "6": "32px",
+    "7": "48px",
+    "8": "64px",
+    "9": "96px"
+  },
+  "radius": {
+    "card": "16px",
+    "button": "12px",
+    "control": "8px"
+  }
+}
+

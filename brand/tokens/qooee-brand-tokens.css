@@ -1,0 +1,49 @@
+:root {
+  --qooee-honey-yellow: #feae00;
+  --qooee-navy: #001524;
+  --qooee-isabelline: #f6f0ed;
+  --qooee-ruby-red: #a20021;
+
+  --qooee-steel-blue: #3f7cac;
+  --qooee-silver-pink: #c1a5a9;
+  --qooee-xanadu: #667761;
+
+  --qooee-honey-30: #ffe7b3;
+  --qooee-honey-15: #fff3d9;
+  --qooee-ruby-30: #ff97ac;
+  --qooee-ruby-15: #ffcbd5;
+  --qooee-steel-blue-30: #c3d8e9;
+  --qooee-steel-blue-15: #e1ecf4;
+  --qooee-platinum: #ece4e5;
+  --qooee-light-gray: #d0d7ce;
+
+  --qooee-text-primary: var(--qooee-navy);
+  --qooee-text-secondary: rgb(0 21 36 / 70%);
+  --qooee-text-inverse: var(--qooee-isabelline);
+  --qooee-surface-primary: var(--qooee-isabelline);
+  --qooee-surface-card: #ffffff;
+  --qooee-surface-muted: var(--qooee-platinum);
+  --qooee-border-default: var(--qooee-light-gray);
+  --qooee-button-primary-bg: var(--qooee-navy);
+  --qooee-button-primary-text: var(--qooee-isabelline);
+  --qooee-button-secondary-text: var(--qooee-navy);
+  --qooee-accent-brand: var(--qooee-honey-yellow);
+  --qooee-state-error: var(--qooee-ruby-red);
+  --qooee-state-warning-bg: var(--qooee-honey-30);
+  --qooee-state-info-bg: var(--qooee-steel-blue-15);
+
+  --qooee-space-1: 4px;
+  --qooee-space-2: 8px;
+  --qooee-space-3: 12px;
+  --qooee-space-4: 16px;
+  --qooee-space-5: 24px;
+  --qooee-space-6: 32px;
+  --qooee-space-7: 48px;
+  --qooee-space-8: 64px;
+  --qooee-space-9: 96px;
+
+  --qooee-radius-card: 16px;
+  --qooee-radius-button: 12px;
+  --qooee-radius-control: 8px;
+}
+

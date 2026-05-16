@@ -3,7 +3,14 @@
 <header class="qooee-header">
   <div class="qooee-shell">
     <nav class="qooee-nav" aria-label="Primary">
-      <a class="qooee-wordmark" href="{{ .Site.Home.RelPermalink }}">Qooee</a>
+      {{ $wordmark := resources.Get "images/logos/qooee-wordmark-primary.png" }}
+      <a class="qooee-wordmark" href="{{ .Site.Home.RelPermalink }}" aria-label="Qooee home">
+        {{ with $wordmark }}
+          <img class="qooee-wordmark__image" src="{{ .RelPermalink }}" width="300" height="103" alt="Qooee">
+        {{ else }}
+          Qooee
+        {{ end }}
+      </a>
       <div class="qooee-nav__group">
         <a class="qooee-nav__link" href="{{ if $isHome }}#product-preview{{ else }}{{ "/#product-preview" | relURL }}{{ end }}">Product</a>
         <a class="qooee-nav__link" href="{{ if $isHome }}#how-it-works{{ else }}{{ "/#how-it-works" | relURL }}{{ end }}">How it works</a>

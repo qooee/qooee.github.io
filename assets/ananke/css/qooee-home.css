@@ -720,17 +720,22 @@ body.qooee-body {
   font-weight: 600;
 }
 
-.qooee-plan-card__intro-price {
+.qooee-plan-card__regular-price {
   background: var(--qooee-honey-30);
   border: 1px solid rgba(254, 174, 0, 0.28);
   border-radius: 8px;
   color: var(--qooee-navy) !important;
-  display: inline-flex;
-  font-size: 0.95rem !important;
+  display: block;
+  font-size: 0.9rem !important;
   font-weight: 700;
   line-height: 1.4 !important;
   padding: 8px 10px;
-  width: fit-content;
+}
+
+.qooee-plan-card__regular-price s {
+  color: rgba(0, 21, 36, 0.64);
+  text-decoration-color: var(--qooee-ruby-red);
+  text-decoration-thickness: 2px;
 }
 
 .qooee-plan-card__fineprint {

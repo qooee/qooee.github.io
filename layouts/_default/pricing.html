@@ -44,8 +44,8 @@
         <article class="qooee-plan-card qooee-plan-card--featured">
           <div class="qooee-plan-card__top">
             <p class="qooee-kicker">Pro</p>
-            <h2>$49.99<span>/year</span></h2>
-            <p class="qooee-plan-card__intro-price">Intro offer: $29.99 for the first year</p>
+            <h2>$29.99<span> first year</span></h2>
+            <p class="qooee-plan-card__regular-price">Regular price: <s>$49.99/year</s> after the first year</p>
             <p class="qooee-plan-card__price-alt">or $4.99/month</p>
             <p>For people who want more control over privacy, identity, and how Qooee fits into their contact workflow.</p>
             <p class="qooee-plan-card__fineprint">
@@ -64,7 +64,6 @@
             <li>Advanced native contacts sync</li>
             <li>Selective sync controls</li>
             <li>Merge and conflict handling</li>
-            <li>Priority support</li>
           </ul>
           <div class="qooee-plan-card__foot">
             <a class="qooee-button qooee-button--primary" href="{{ "/get-qooee-contacts/" | relURL }}">Upgrade to pro</a>
@@ -140,7 +139,6 @@
           (dict "feature" "Advanced native contacts sync" "free" "No" "pro" "Included" "team" "Later")
           (dict "feature" "Selective sync controls" "free" "No" "pro" "Included" "team" "Later")
           (dict "feature" "Merge and conflict handling" "free" "No" "pro" "Included" "team" "Later")
-          (dict "feature" "Priority support" "free" "No" "pro" "Included" "team" "Later")
         }}
         {{ range $rows }}
         <div class="qooee-compare-table__row" role="row">

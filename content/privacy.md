@@ -5,155 +5,167 @@ description = "Privacy policy for Qooee Contacts."
 
 # Qooee Contacts privacy policy
 
-**effective date:** 26 Mar 2026  
-**app:** Qooee Contacts (the “app”)  
-**provider:** evil robots pty ltd (abn 21 667 313 911) (referred to in this policy as “qooee”, “we”, “us”)  
-**contact:** [hello@qooee.net](mailto:hello@qooee.net)  
-**address:** evil robots pty ltd, po box 201, berowra heights nsw 2082, australia
+Canonical public URL: https://qooee.net/privacy/
 
-## 1) overview
+**Effective date:** 26 March 2026
+**App:** Qooee Contacts (the "App")
+**Provider:** evil robots pty ltd (ABN 21 667 313 911) ("Qooee", "we", "us")
+**Contact:** hello@qooee.net
+**Address:** evil robots pty ltd, PO Box 201, Berowra Heights NSW 2082, Australia
 
-Qooee Contacts helps you capture, organise, and keep professional contact details up to date.
+## 1. Overview
 
-this policy explains what information we collect, how we use it, and the choices you have.
+Qooee Contacts helps you create, organise, share, and keep professional contact details up to date.
 
-## 2) information we collect
+This policy explains what information we collect, how we use it, how we share it, and the choices you have. If you do not agree with this policy, do not use the App.
 
-we collect information in three broad ways: (a) what you provide, (b) what we collect automatically, and (c) what we collect when you enable features or permissions.
+## 2. Information we collect
 
-### a. information you provide
+We collect information in three broad ways: what you provide, what is collected automatically when the App and service operate, and what is collected only when you enable specific features or permissions.
 
-* **account information:** information you provide when you create an account or sign in, such as name and email address.
-* **your qooee profile (optional):** details you choose to store as your own shareable contact card (for example, name, role, organisation, phone, email, address).
-* **contacts you add:** names, company, role, phone numbers, emails, addresses, and other fields you choose to store.
-* **business card capture:** card images and text extracted from them (if you use scanning features).
-* **support and communications:** messages you send to support and any information you include.
+### a. Information you provide
 
-### b. information collected automatically
+* **Account information:** information used to create, authenticate, and manage your account, such as your name, email address, sign-in provider, and provider account identifiers.
+* **Your Qooee profile and cards:** details you choose to store as your own contact card or card views, such as name, role, organisation, phone numbers, email addresses, postal addresses, links, birthday, and profile image.
+* **Contacts you add or import:** names, organisations, roles, phone numbers, email addresses, postal addresses, links, birthday, notes, images, and other fields you choose to store.
+* **Connections, invitations, reports, and blocks:** information needed to send or receive connection requests, maintain trusted connections, report safety or privacy concerns, and block other users.
+* **Subscription information:** limited App Store subscription information, such as product identifiers, entitlement state, renewal or expiry status, and transaction identifiers. Apple processes your payment details.
+* **Support and communications:** messages you send to support and any information you include.
 
-* **usage data:** interactions with the app (for example, feature usage and basic event counts).
-* **diagnostics:** crash reports, performance data, and error logs.
-* **device and app information:** device model, os version, app version, language, and time zone.
-* **identifiers:** an app instance identifier, and push notification token (if you enable notifications).
+### b. Information collected automatically
 
-### c. information collected with permissions you control
+* **Identifiers:** identifiers needed to operate the App and service, such as your Firebase user ID, linked sign-in provider identifiers, app account token, app instance or installation identifiers used by integrated SDKs, and App Store transaction identifiers.
+* **Device, app, and request information:** information such as device model, operating system version, app version, language, time zone, IP address, and server request metadata when the App communicates with Qooee services or integrated providers.
+* **Operational and security logs:** records used to authenticate requests, prevent abuse, debug errors, process account and billing events, and maintain service reliability.
 
-the app will ask permission before accessing:
+The current iOS production build does not include Firebase Analytics, Firebase Crashlytics, Firebase Cloud Messaging, Firebase Performance, Sentry, Mixpanel, Amplitude, or another dedicated production analytics, crash-reporting, or push-notification SDK.
 
-* **contacts:** if you choose to import, sync, or export contacts.
-* **camera:** if you scan business cards or capture images.
-* **photos:** if you upload card images from your library.
-* **notifications:** if you enable notifications.
+### c. Information collected with permissions you control
 
-you can revoke permissions at any time in ios settings.
+The App asks for permission before accessing protected device features:
 
-we do not collect precise location unless you enable a location-based feature in the future. if we add one, we will request permission and update this policy.
+* **Contacts:** if you choose to import contacts or enable Apple Contacts sync.
+* **Camera:** if you choose to scan a Qooee QR invitation or sharing code.
+* **Photo library:** if you choose an image for your profile or a contact card.
 
-## 3) sign-in providers (apple, google, and microsoft)
+You can revoke device permissions at any time in iOS Settings.
 
-you may be able to sign in using third-party identity providers such as **sign in with apple**, **google sign-in**, and **microsoft sign-in** (microsoft entra id / microsoft account).
+The current iOS production build does not offer business card scanning, Microsoft sign-in, push notifications, or a contact export feature. If we add those features, we will update this policy before or when they become available.
 
-when you use a third-party sign-in option:
+We do not collect precise location unless you enable a location-based feature in the future. If we add one, we will request permission and update this policy.
 
-* we receive basic account information from the provider, typically a **stable user identifier**, and depending on your provider and settings, your **name**, **email address**, and **profile photo**.
-* we do **not** receive your password.
-* we use this information to **create and secure your account**, prevent fraud, and support account recovery.
+## 3. Sign-in providers
 
-if we store authentication tokens (for example, refresh tokens), we store them securely and only for as long as needed to provide sign-in and account access.
+You can sign in using supported third-party identity providers, currently Sign in with Apple and Google Sign-In.
 
-you can usually revoke access via your account settings with the relevant provider.
+When you use a third-party sign-in option:
 
-## 4) information about other people
+* we receive basic account information from the provider, typically a stable user identifier and, depending on the provider and your settings, your name, email address, and profile photo;
+* we do not receive your password;
+* we use this information to create and secure your account, prevent fraud, support account recovery, and let you manage linked sign-in methods.
 
-if you upload or store someone else’s contact details (for example, by importing your address book or scanning a business card), you are responsible for ensuring you have the right to do so.
+You can usually revoke third-party sign-in access through your account settings with the relevant provider.
 
-we treat this contact information as content you control, stored so you can use the app.
+## 4. Information about other people
 
-## 5) how we use information
+If you upload, import, sync, or store someone else's contact details, you are responsible for ensuring you have the right to do so.
 
-we use information to:
+We treat contact information about other people as content you control, stored so you can use the App.
 
-* **provide and operate the app**, including account creation, authentication, syncing, and saving contacts.
-* **scan and extract business card details** and help you review extracted fields.
-* **enable connection features** that keep details up to date between connected users (see section 6).
-* **improve data quality**, such as deduplication and formatting.
-* **maintain safety and integrity**, including preventing abuse, spam, and fraud.
-* **provide support** and respond to requests.
-* **improve the app**, including debugging, analytics, and testing.
-* **comply with legal obligations** and enforce our terms.
+## 5. How we use information
 
-we may use aggregated or de-identified information for analytics and product improvement. we do not attempt to re-identify de-identified data except as permitted by law.
+We use information to:
 
-## 6) connections and sharing
+* provide and operate the App, including account creation, authentication, syncing, contact storage, sharing, reporting, blocking, support, and subscription entitlement checks;
+* enable connection features that keep contact details up to date between connected users, subject to each user's settings;
+* import contacts and optionally sync selected Qooee contacts with Apple Contacts when you enable those controls;
+* improve data quality, such as formatting, deduplication, and merge or conflict handling;
+* maintain safety and integrity, including preventing abuse, spam, fraud, and unauthorised access;
+* provide support and respond to privacy, safety, billing, or account requests;
+* debug errors, maintain service reliability, and test service changes;
+* comply with legal obligations and enforce our terms.
 
-Qooee Contacts can support sharing of contact updates between people who are connected in the app.
+We may use aggregated or de-identified information for analytics and product improvement. We do not attempt to re-identify de-identified data except as permitted by law.
 
-* if you choose to connect with someone, **your shareable contact details may be shared with them**, and updates you make may be reflected for them, subject to your settings and theirs.
-* you can typically **disconnect or block** other users using in-app controls.
-* we do not publish your information publicly by default.
+## 6. Connections and sharing
 
-exact behaviour depends on the features you enable and your in-app settings.
+Qooee Contacts supports sharing contact updates between people who are connected in the App.
 
-## 7) how we share information
+* If you choose to connect with someone, your shareable contact details may be shared with them, and updates you make may be reflected for them, subject to your settings and theirs.
+* You can disconnect from or block other users using in-app controls.
+* We do not publish your information publicly by default.
 
-we may share information:
+Exact behaviour depends on the features you enable and your in-app settings.
 
-* **with service providers** who help us operate the app (for example cloud hosting, database services, email delivery, customer support tooling, crash reporting, and analytics). they are authorised to process data only to provide services to us.
-* **with other users**, only as described in section 6 and controlled by your settings.
-* **for legal reasons**, such as responding to lawful requests, protecting rights and safety, or investigating misuse.
-* **in a business transfer**, such as a merger, acquisition, or asset sale.
+## 7. How we share information
 
-we do not sell personal information in the conventional sense. we do not share personal information for third-party behavioural advertising without your consent.
+We may share information:
 
-## 8) third-party services
+* **with service providers** who help us operate the App, such as cloud hosting, database, authentication, email delivery, customer support, billing, security, and operational tooling providers;
+* **with sign-in providers** when needed to authenticate you or manage linked sign-in methods;
+* **with Apple** for App Store subscriptions and in-app purchase processing;
+* **with other users** only as described in section 6 and controlled by your settings;
+* **for legal reasons**, such as responding to lawful requests, protecting rights and safety, or investigating misuse;
+* **in a business transfer**, such as a merger, acquisition, financing, restructure, or asset sale.
 
-the app may rely on third-party services (for example apple, google, and microsoft identity services, and infrastructure providers). their processing may be governed by their own privacy policies.
+We do not sell personal information in the conventional sense. We do not share personal information for third-party behavioural advertising without your consent.
 
-if you purchase a subscription through apple in-app purchase, apple processes payment details. we receive limited information such as subscription status.
+## 8. Third-party services
 
-## 9) international transfers
+The App and service may rely on third-party services, including Apple services, Google Sign-In, Firebase Authentication, cloud hosting, database services, and App Store in-app purchase services. Their processing may be governed by their own privacy policies.
 
-we may process and store information in countries other than where you live, including where our service providers operate. where required, we use appropriate safeguards for international transfers.
+If you purchase a subscription through Apple in-app purchase, Apple processes payment details. We receive limited information such as subscription status, product identifiers, renewal or expiry status, and transaction identifiers.
 
-## 10) data retention
+## 9. International transfers
 
-we keep personal information only as long as needed to provide the app and for legitimate business or legal purposes.
+We may process and store information in countries other than where you live, including where our service providers operate. Where required, we use appropriate safeguards for international transfers.
 
-typical examples:
+## 10. Data retention
 
-* account and contact data is retained while your account is active.
-* diagnostics data is retained for a limited period for stability and security.
+We keep personal information only as long as needed to provide the App and for legitimate business or legal purposes.
 
-you can request deletion as described below. some information may be retained where required by law or for safety and dispute resolution.
+Typical examples:
 
-## 11) your choices and rights
+* account and contact data is retained while your account is active;
+* reports, blocks, safety records, deletion records, subscription events, and operational logs may be retained as needed for security, fraud prevention, audit, billing, dispute resolution, or legal reasons;
+* local data on your device may remain until you delete the App, clear local data, or request account deletion with local clean-up enabled.
 
-depending on your location, you may have rights to access, correct, delete, or export your personal information, and to object to or restrict certain processing.
+You can request deletion as described below. Some information may be retained where required by law or for safety, fraud prevention, billing, audit, or dispute resolution.
 
-you can also:
+## 11. Your choices and rights
 
-* revoke permissions (contacts, camera, photos, notifications) in ios settings.
-* control sharing and connections in the app.
-* request account deletion via the in-app account settings (if available) or by contacting [hello@qooee.net](mailto:hello@qooee.net).
+Depending on your location, you may have rights to access, correct, delete, or receive a copy of your personal information, and to object to or restrict certain processing.
 
-we may need to verify your identity before fulfilling requests.
+You can also:
 
-## 12) security
+* revoke Contacts, Camera, and Photo Library permissions in iOS Settings;
+* control sharing, connections, blocks, Apple Contacts sync, and local data choices in the App;
+* disconnect supported sign-in providers where another sign-in method remains available;
+* manage or cancel Apple subscriptions in your Apple Account subscriptions;
+* request account deletion in the App via Settings > Delete account, or by contacting hello@qooee.net.
 
-we use reasonable administrative, technical, and organisational safeguards designed to protect information. no system is perfectly secure.
+The in-app deletion flow asks you to confirm recent authentication, explains what Qooee controls, lets you choose whether to remove Qooee local data from the device, and submits a deletion request to Qooee. After the request is accepted, Qooee signs you out and processes deletion of the Qooee account record and personal data controlled by Qooee as soon as possible.
 
-## 13) children
+Deleting your Qooee account does not cancel Apple billing, does not remove Apple Contacts entries on your device unless you separately remove them, and does not delete records another user independently stores.
 
-the app is not intended for children under 13 (or the minimum age required in your jurisdiction). we do not knowingly collect personal information from children.
+We may need to verify your identity before fulfilling requests.
 
-## 14) changes to this policy
+## 12. Security
 
-we may update this policy from time to time. if changes are material, we will provide notice in the app or by other reasonable means. the effective date above shows when it was last updated.
+We use reasonable administrative, technical, and organisational safeguards designed to protect information. No system is perfectly secure.
 
-## 15) contact us
+## 13. Children
 
-questions or requests about privacy:
+The App is not intended for children under 13, or the minimum age required in your jurisdiction. We do not knowingly collect personal information from children.
 
-* **email:** [hello@qooee.net](mailto:hello@qooee.net)
-* **provider:** evil robots pty ltd (abn 21 667 313 911)
-* **address:** evil robots pty ltd, po box 201, berowra heights nsw 2082, australia
+## 14. Changes to this policy
+
+We may update this policy from time to time. If changes are material, we will provide notice in the App or by other reasonable means. The effective date above shows when it was last updated.
+
+## 15. Contact us
+
+Questions or requests about privacy:
+
+* **Email:** hello@qooee.net
+* **Provider:** evil robots pty ltd (ABN 21 667 313 911)
+* **Address:** evil robots pty ltd, PO Box 201, Berowra Heights NSW 2082, Australia

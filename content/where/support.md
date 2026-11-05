@@ -2,30 +2,39 @@
 title = "Support"
 description = "Help with your daily WFH log, automatic recording, corrections and backups."
 updated = "5 November 2026"
+support_contact = true
 +++
 
-Need a hand? Email [hello@qooee.net](mailto:hello@qooee.net?subject=Qooee%20Where%20support). Tell us what you were trying to do, what happened, and your Qooee Where and macOS versions. Find these in **Qooee Where → About Qooee Where** and **Apple menu → About This Mac**.
+## Getting started
 
-We cannot see your diary. A fictional example or a redacted screenshot is usually enough; please check attachments before sending them. There is no need to send a complete diary, network identifiers or passwords for a general question.
+Qooee Where requires **macOS 14 or later**. The Mac App Store release is being prepared.
+
+If you have a beta invitation, install [TestFlight for Mac](https://testflight.apple.com/), open the invitation on your Mac and choose **View in TestFlight → Accept → Install**. Use **Update** in TestFlight for later builds. If no build is available, contact us with the message you see.
+
+Open Qooee Where from Applications. If only its menu-bar icon appears, choose **Open diary**. Closing the window leaves recording running; **Quit Qooee Where** stops it.
+
+Start with a manual day below. Home detection and activity recording are optional.
 
 ## Record and check a day
 
 1. Choose a date in the main **WFH log** window.
-2. Select **Edit WFH hours…**, enter the actual start and finish, and add any excluded breaks. You can also use **Start WFH** to record as you work.
-3. Check the total and save. Use **Confirm day**, or the editor’s save-and-check action, once the day is complete. A running timer must finish before its day can be checked.
+2. Select **Add WFH hours…** for a new day, or **Edit WFH hours…** for an existing one. Enter the actual start and finish and add any breaks.
+3. Choose **Save WFH hours**, check the total, then **Confirm day** once the day is complete. In the checking queue, **Save & check** does both.
 
-For a day with no home work, use **No WFH** in the day editor, or confirm **No WFH** in **Check days…**. This records a checked zero-hour day; it is different from leaving a day blank. The checking queue gathers past days that still need attention. Today and future days are not overdue.
+To record as you work, choose **Start WFH**. Use **Pause** for a break and **Finish & check…** when you finish. A running timer must finish before its day can be checked.
 
-The **Recording period** sets the start of your log. Days before it stay outside the checking queue. Record any earlier-record reference there if you keep part of the year elsewhere.
+For a day with no home work, turn on **No WFH this day** in the editor, save and confirm it. You can also choose **No WFH** in **Check days**. A checked zero-hour day is different from a blank day.
+
+**Check days** gathers past days that need attention. Choose **Start date…** to set the recording period; days before that date are not overdue. Add an earlier-record reference if you keep part of the year elsewhere.
 
 ## Correct time in the grid
 
 Click a day square in the year overview to open **Recording details** for that date. The day grid has one column per hour and six ten-minute blocks down each column.
 
 - Click a block, then Shift-click the final block to select a range. For a 15:30–16:00 break, select the 15:30, 15:40 and 15:50 blocks.
-- Alternatively, choose **Select time range…** and enter the start and finish directly. Tab moves through the time fields and assignment actions when macOS Keyboard Navigation is enabled.
-- Choose **Break**, **Personal**, **WFH** or **Elsewhere**. Break and Personal share a colour and both stay outside WFH totals; their classifications remain distinct in the details.
-- Use the named **Undo** action to restore the previous assignment.
+- Alternatively, choose **Select time range…** and enter **Start 15:30** and **Finish 16:00** directly.
+- Choose **Break**, **Personal**, **WFH** or **Elsewhere**. The legend combines Break and Personal as **Break / personal**; both are excluded from WFH hours.
+- Use **Undo** to restore the previous assignment.
 
 WFH or Elsewhere assigns the whole selected range as work, including any breaks inside it. Check the selection before applying the change. Daily corrections retain earlier entries for inspection.
 
@@ -33,25 +42,32 @@ On an unchecked past day, **Assign remaining time** assigns all remaining record
 
 ## Automatic recording
 
-**Home detection**, the **work timer** and **activity recording** are separate controls:
+To suggest work time automatically:
 
-- **Home detection** recognises Home or Not home from the Wi-Fi and display rules you enable. It records presence while the app runs and the Mac is awake.
-- **Work timer** records time you deliberately choose to count as work. It follows the current location; Unknown is left out of WFH until you correct it. Turn work recording off for a break.
-- **Activity recording** optionally records coarse intervals based on the time since keyboard or mouse input. It does not read the input itself. These intervals remain unassigned until you review them.
+1. Set up your rules in **Settings → Home detection** and enable detection.
+2. In **Settings → Work & activity**, enable **Record work automatically when the app opens**. This applies on the next launch.
+3. To start during the current session, turn on **Record work time** in the menu-bar menu or **Diary** menu. Choose **Work location → Automatic** to follow your home rules.
 
-Pausing activity recording does not stop the work timer or home detection. Turning the work timer off does not stop those independent recordings. Use the labelled menu-bar controls or **Settings → Work & activity** to choose what is running.
+The menu controls have different purposes:
 
-Automatic observations and suggested work need checking. They do not, by themselves, confirm tax-log hours. You can use the entire daily WFH flow manually without enabling detection or activity recording.
+- **Record work time** runs the work timer. Turn it off for a break. It includes idle time while the Mac is awake.
+- **Record activity observations** captures optional activity intervals for later assignment. Turning it off does not stop the work timer or home detection.
+- **Work location** chooses Automatic, Home or Elsewhere for new work time. A manual choice lasts until you select Automatic or quit; it does not change earlier entries.
+
+Check suggested hours before confirming a day. Add work done while the app was closed or the Mac was asleep manually.
 
 ## Home or Office is not recognised
 
-Open **Settings → Home detection**. Enable detection and the rules you want to use. Add a Wi-Fi network or display to your home rules, or to **Other networks** for a place that should be recognised as Not home. Labels are optional. Display brand/model names are shown when macOS supplies them.
+1. Open **Settings → Home detection** and enable **Detect and record Home / Not home**.
+2. Add your network or stationary display under **Home rules**, or under **Other networks** for an office or another away location. Enable the saved rule.
+3. For Wi-Fi, choose **Allow Wi-Fi recognition…**. If access was denied, enable Qooee Where in **System Settings → Privacy & Security → Location Services**. Check that the saved network name matches; if you restricted access points, include the ones you use.
+4. If home and away rules match at once, resolve the warning by correcting the conflicting rules.
 
-Rules are alternatives: a matching office Wi-Fi network **or** office display is enough for Not home. If home and away rules match at once, the app warns about the conflict. Review the enabled rules and connected devices rather than relying on a location result during that conflict.
+Rules use **or**: matching either the office Wi-Fi or the office display is enough for Not home. Labels are optional; display names are offered when macOS supplies them.
 
-For Wi-Fi, choose **Allow Wi-Fi recognition…** and check **System Settings → Privacy & Security → Location Services**. The saved network name must match the connected network; if you restrict access points, include the ones you use. The app requests this permission to read the connected network, without requesting coordinates. Display rules do not need it.
+**Unknown** means no rule can establish the location. For work you are recording now, choose **Work location → Home** or **Elsewhere** in the menu. Correct earlier time in **Recording details**.
 
-Allow a couple of minutes for evidence to settle. Unknown means the app cannot establish the location from the available evidence. Use a temporary **Home for two hours** or **Not home for two hours** choice when needed; **Automatic home detection** returns to your rules. Automatic detection cannot reconstruct closed-app or sleeping-Mac time.
+For a temporary presence override, use **Settings → Home detection → Temporary choice**. **Automatic** returns to the saved rules.
 
 ## Gaps, merging and rounded totals
 
@@ -61,7 +77,7 @@ Longer gaps remain excluded even when sessions are grouped for easier viewing. T
 
 ## Export an annual handover
 
-Open **WFH year** in the main window and choose **Save year package…**. The package includes a readable HTML report, daily WFH CSV, detailed work-block CSV, complete diary JSON and instructions. It shows checked hours and unfinished days separately. Checked No WFH days appear as zero-hour entries.
+Open **WFH year**, select the financial year and choose **Save year package…**. Use **Check days…** there to finish any unchecked days first. The package contains a readable report, daily WFH CSV, detailed work blocks and a complete diary backup. Checked zero-WFH days and unfinished days are shown separately.
 
 Open the readable report in a browser, or open CSV files in Numbers or Excel. If asked, use UTF-8 and a comma separator. Keep the JSON file for complete restoration; a CSV is a report, not a full backup. Notes are optional in reports, but the complete backup contains them.
 
@@ -69,34 +85,45 @@ Qooee Where records hours; it does not determine deduction eligibility or calcul
 
 ## Backup and restore
 
-Choose **Backup & recovery… → Save backup…**. Save the dated, verified JSON file to an external drive or a folder that syncs off your Mac. Allow syncing to finish and check that the file is accessible independently of this Mac.
+Choose **Diary → Backup & recovery… → Save backup…**. Select an external drive or a folder that syncs off your Mac. Wait for **Backup saved and verified** and, if using a synced folder, allow syncing to finish.
 
-On a clean installation:
+**Restore on a new or empty installation:**
 
-1. Open **Backup & recovery… → Restore backup…**.
+1. Open **Diary → Backup & recovery… → Restore backup…**.
 2. Select the saved backup and check the preview, date and record counts.
 3. Choose **Restore backup**. All years, original entry versions, checking history, log coverage and report settings are restored. The source file remains unchanged.
 
-Restoration requires an empty diary. Recording stays off afterwards; set up home detection and automatic recording separately on the new Mac. Device-specific rules and permissions are not included in the portable backup. Complete diary JSON from an annual package can also be restored.
+If **Restore backup…** is unavailable, the diary contains records, a timer is running or a diary/settings error needs resolving. Keep existing records and contact support if you need help; do not delete them to enable restoration.
+
+Recording stays off after restoration. Set up home detection and automatic recording separately on the new Mac. Complete diary JSON from an annual package can also be restored.
 
 **Recovery snapshots on this Mac** retain the latest 20 copies made before diary edits. These help undo mistakes but share the same disk. Restoring a snapshot preserves the current file first; inspect its date and counts before confirming.
 
 ## A diary will not open or save
 
-Keep the records folder and any error message. The app preserves unreadable and newer-format stores instead of overwriting them. Use **Reload diary** after resolving a file-access or conflict issue.
+Keep the error message and existing records. Open **Diary → Show records in Finder** to find them; quit the app before copying the folder somewhere safe.
 
-Use **Show records and recovery files in Finder** in Backup & recovery, or the records control in Settings, to locate the files. Quit the app before manually copying them and keep the originals. Contact support with the error text first; do not delete records to troubleshoot a general problem.
+Check that the disk has free space and the records folder is writable. Reopen the app and choose **Diary → Reload diary** after resolving a file-access or conflict issue. If the error remains, send its text to support. Do not delete the diary or replace an unreadable file with an empty one.
 
-## Privacy, deletion and accessibility
+## Delete records {#privacy-deletion-and-accessibility}
 
-Normal recording deletion offers Undo until the next review action or restart. **Permanently remove…** also removes selected recordings from app-held recovery and import copies. Previously exported files and backups remain under your control. See the [privacy policy](../privacy/#retention-and-deletion) for the full scope.
+Normal recording deletion offers Undo until the next review action or restart. **Permanently remove…** also removes selected recordings from app-held recovery and import copies. Exported files and separate backups are unaffected. See the [privacy policy](../privacy/#retention-and-deletion).
 
-You can change reading size and calendar Grid/Details in the app. If keyboard navigation, VoiceOver or a display setting makes a control difficult to use, tell us the window, action and expected result, using fictional data. We welcome accessibility reports; full VoiceOver support is still being verified.
+To remove all local records, first save anything you want to keep. Use **Diary → Backup & recovery… → Show records and recovery files in Finder**, quit the app, then remove its diary, settings, Recovery and Imports files. Manage exports and other backups separately. Uninstalling the app alone can leave these files behind.
+
+## Keyboard and VoiceOver
+
+For keyboard use, enable **System Settings → Keyboard → Keyboard navigation**. Use **Select time range…** instead of moving through individual grid blocks. Reading size is in **Settings → General → Reading**. Report keyboard, VoiceOver or display problems with the window name, action and expected result.
 
 ## Contact and purchases
 
-Support and privacy enquiries: [hello@qooee.net](mailto:hello@qooee.net?subject=Qooee%20Where%20support).
+Email [hello@qooee.net](mailto:hello@qooee.net?subject=Qooee%20Where%20support) and include:
 
-Provided by **evil robots pty ltd**, ABN 21 667 313 911, PO Box 201, Berowra Heights NSW 2082, Australia.
+- What you were trying to do, what happened and any error text.
+- App version: **Qooee Where → About Qooee Where**. Mention TestFlight if you use it.
+- macOS version: **Apple menu → About This Mac**.
+- A screenshot or fictional example if helpful. Check it for private information; a complete diary is not needed for a general question.
 
-The Mac App Store release is being prepared. Once available, Apple handles Store billing and refunds; [Apple purchase support](https://support.apple.com/en-au/billing) covers those requests. For an app problem, contact us directly.
+If the email button does not open your mail app, copy **hello@qooee.net** into your usual email service.
+
+Apple handles App Store billing and refund requests through [Apple purchase support](https://support.apple.com/en-au/billing). For problems with Qooee Where itself, contact us directly.

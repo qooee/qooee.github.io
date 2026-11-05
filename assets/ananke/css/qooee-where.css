@@ -1,0 +1,107 @@
+.where-page { margin: 0; -webkit-font-smoothing: antialiased; }
+.where-page *, .where-page *::before, .where-page *::after { box-sizing: border-box; }
+.where-page a:focus-visible, .where-page summary:focus-visible { outline: 3px solid var(--qooee-steel-blue); outline-offset: 5px; border-radius: 3px; }
+.where-page [id] { scroll-margin-top: 24px; }
+.where-page .qooee-shell { max-width: 1168px; }
+.where-skip { position: absolute; left: 16px; top: -100px; z-index: 100; background: white; color: var(--qooee-navy); padding: 16px; }
+.where-skip:focus { top: 8px; }
+.where-brand { display: flex; gap: 20px; align-items: center; }
+.where-product-name { color: var(--qooee-navy); border-left: 1px solid var(--qooee-border); padding-left: 20px; font-size: 1.2rem; text-decoration: none; font-weight: 600; }
+.where-nav { box-shadow: none; }
+.where-nav [aria-current] { text-decoration: underline; text-underline-offset: 6px; }
+.where-hero { padding: 76px 0 0; }
+.where-hero__intro { display: grid; grid-template-columns: 1.25fr 1fr; gap: 64px; align-items: end; margin-bottom: 44px; }
+.where-hero h1 { font-size: clamp(2.8rem, 5vw, 4.5rem); line-height: 1.05; letter-spacing: -0.045em; margin: 0; font-weight: 700; }
+.where-hero h1 span { color: #3e6175; }
+.where-hero__copy > p:first-child, .where-copy p, .where-section-intro > p:not(.qooee-kicker), .where-steps p, .where-backup p, .where-contact p, .where-faq p { font-size: 1.06rem; line-height: 1.7; color: var(--qooee-text-muted); margin: 0 0 18px; }
+.where-hero .qooee-actions { align-items: center; margin: 24px 0 14px; }
+.where-page .qooee-button { gap: 16px; }
+.where-availability { font-size: .88rem; color: var(--qooee-text-muted); margin: 0; }
+.where-text-link { color: var(--qooee-navy); font-weight: 600; text-underline-offset: 5px; line-height: 1.6; }
+.where-product-shot { margin: 0; padding: 22px 34px 0; background: #e5e9e6; border: 1px solid var(--qooee-border); border-radius: 20px; overflow: hidden; }
+.where-product-shot__label { display: flex; justify-content: space-between; gap: 16px; font-size: .82rem; color: #405557; margin-bottom: 20px; }
+.where-product-shot__label span:last-child { white-space: nowrap; }
+.where-product-shot img { display: block; width: 100%; height: auto; border-radius: 10px; box-shadow: 0 12px 40px #0015241a; }
+.where-product-shot figcaption { padding: 16px 0; font-size: .8rem; line-height: 1.5; color: #405557; text-align: center; }
+.where-trust { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin: 0; padding: 26px 0; list-style: none; border-bottom: 1px solid var(--qooee-border); color: var(--qooee-navy); font-size: .94rem; }
+.where-trust li::before { content: "✓"; color: #546b51; margin-right: 10px; }
+.where-section { padding: 88px 0; }
+.where-workflow { display: grid; grid-template-columns: .9fr 1.15fr; gap: 100px; }
+.where-section-intro h2, .where-contact h2 { font-size: clamp(2rem, 3.4vw, 3rem); line-height: 1.1; letter-spacing: -.035em; margin: 0 0 22px; }
+.where-section-intro > p { max-width: 440px; }
+.where-steps { list-style: none; padding: 0; margin: 0; }
+.where-steps li { display: grid; grid-template-columns: 44px 1fr; gap: 22px; padding: 24px 0; border-top: 1px solid var(--qooee-border); }
+.where-steps li:first-child { padding-top: 0; border-top: 0; }
+.where-steps li > span { font-size: .84rem; font-weight: 700; color: #805500; padding-top: 5px; }
+.where-steps h3, .where-backup h3 { font-size: 1.3rem; margin: 0 0 10px; line-height: 1.3; }
+.where-steps p { margin: 0; }
+.where-detection { background: #e1ecf4; }
+.where-two-column { display: grid; grid-template-columns: .9fr 1.15fr; gap: 100px; }
+.where-handover { display: grid; grid-template-columns: 1fr 1fr; gap: 90px; align-items: center; }
+.where-backup { padding: 34px; background: var(--qooee-navy); color: var(--qooee-isabelline); border-radius: 18px; }
+.where-backup__symbol { display: block; font-size: 2rem; color: var(--qooee-honey-yellow); margin-bottom: 20px; }
+.where-backup p { color: #d5dce0; }
+.where-backup a { color: #ffe7b3; font-weight: 600; text-underline-offset: 5px; line-height: 1.6; }
+.where-faq { border-top: 1px solid var(--qooee-border); }
+.where-faq details { border-bottom: 1px solid var(--qooee-border); padding: 20px 0; }
+.where-faq details:first-child { padding-top: 0; }
+.where-faq summary { cursor: pointer; font-size: 1.08rem; font-weight: 600; line-height: 1.5; }
+.where-faq details p { padding-top: 16px; margin-bottom: 0; }
+.where-contact { background: #ffe7b3; padding: 56px 0; }
+.where-contact > div { display: flex; justify-content: space-between; gap: 32px; align-items: center; }
+.where-contact h2 { font-size: 2rem; margin-bottom: 12px; }
+.where-contact p { margin-bottom: 0; }
+.where-contact .qooee-kicker { color: #805500; margin-bottom: 12px; }
+.where-contact .qooee-button { flex-shrink: 0; }
+.where-footer { margin-top: 0; }
+.where-footer .qooee-footer__note { margin-top: 12px; }
+.where-document { padding-top: 68px; padding-bottom: 88px; }
+.where-document header { max-width: 780px; margin-bottom: 52px; }
+.where-document .qooee-eyebrow a { color: inherit; text-decoration: none; }
+.where-document h1 { font-size: clamp(2.6rem, 5vw, 4rem); letter-spacing: -.04em; margin: 0 0 18px; line-height: 1.05; }
+.where-document__lede { font-size: 1.2rem; line-height: 1.65; color: var(--qooee-text-muted); }
+.where-document__date { font-size: .88rem; color: var(--qooee-text-muted); }
+.where-document__grid { display: grid; grid-template-columns: 230px minmax(0, 1fr); gap: 70px; align-items: start; }
+.where-toc { position: sticky; top: 30px; font-size: .88rem; line-height: 1.5; }
+.where-toc > p { margin: 0 0 14px; font-weight: 700; }
+.where-toc ul { list-style: none; margin: 0; padding: 0; }
+.where-toc li { margin: 0 0 12px; }
+.where-toc a { color: var(--qooee-text-muted); text-decoration: none; }
+.where-toc a:hover { text-decoration: underline; }
+.where-document__body { max-width: 760px; overflow-wrap: anywhere; }
+.where-document__body > :first-child { margin-top: 0; }
+.where-document__body h2 { font-size: 1.65rem; letter-spacing: -.02em; line-height: 1.25; margin: 44px 0 16px; }
+.where-document__body h3 { font-size: 1.15rem; line-height: 1.4; margin: 24px 0 12px; }
+.where-document__body p, .where-document__body li { font-size: 1rem; line-height: 1.8; color: #263e4e; }
+.where-document__body p { margin: 0 0 18px; }
+.where-document__body li { margin-bottom: 10px; }
+.where-document__body ol, .where-document__body ul { padding-left: 24px; }
+.where-document__body a { color: #285f87; text-underline-offset: 3px; }
+.where-document__body blockquote { border-left: 3px solid var(--qooee-honey-yellow); margin: 24px 0; padding: 6px 22px; }
+@media (max-width: 800px) {
+  .where-hero { padding-top: 48px; }
+  .where-hero__intro, .where-workflow, .where-two-column, .where-handover { grid-template-columns: 1fr; gap: 32px; }
+  .where-hero__intro { margin-bottom: 32px; }
+  .where-hero h1 { font-size: clamp(2.8rem, 8vw, 4.3rem); }
+  .where-section { padding: 56px 0; }
+  .where-section-intro > p { max-width: none; }
+  .where-document__grid { grid-template-columns: 1fr; gap: 34px; }
+  .where-toc { position: static; padding: 22px; background: #ece4e580; border-radius: 12px; }
+  .where-toc ul { columns: 2; column-gap: 22px; }
+  .where-toc li { break-inside: avoid; }
+  .where-contact > div { display: block; }
+  .where-contact .qooee-button { margin-top: 24px; }
+}
+@media (max-width: 540px) {
+  .where-page .qooee-shell { padding-left: 20px; padding-right: 20px; }
+  .where-nav { display: block; padding: 16px; }
+  .where-nav .qooee-nav__group { justify-content: flex-start; gap: 22px; margin-top: 18px; }
+  .where-nav .qooee-nav__link { font-size: .88rem; }
+  .where-product-shot { padding: 14px 10px 0; border-radius: 12px; }
+  .where-product-shot__label { font-size: .7rem; margin-bottom: 14px; }
+  .where-trust { display: grid; gap: 12px; }
+  .where-backup { padding: 26px; }
+  .where-document { padding-top: 44px; }
+  .where-toc ul { columns: 1; }
+}
+@media (prefers-reduced-motion: reduce) { .where-page .qooee-button { transition: none; } .where-page .qooee-button:hover { transform: none; } }

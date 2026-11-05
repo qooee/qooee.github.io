@@ -1,0 +1,61 @@
+{{ define "main" }}
+<section class="where-hero">
+  <div class="qooee-shell">
+    <div class="where-hero__intro">
+      <div>
+        <p class="qooee-eyebrow">Qooee Where · for Mac</p>
+        <h1>Your WFH hours.<br><span>Ready for tax time.</span></h1>
+      </div>
+      <div class="where-hero__copy">
+        <p>Keep a clear record of the hours you work from home. Check your days as you go, see the whole year and prepare a straightforward handover for your tax return.</p>
+        <div class="qooee-actions"><a class="qooee-button qooee-button--primary" href="#how-it-works">Explore the app <span aria-hidden="true">↓</span></a><a class="where-text-link" href="{{ "/where/support/" | relURL }}">Get help</a></div>
+        <p class="where-availability">Coming to the Mac App Store</p>
+      </div>
+    </div>
+    <figure class="where-product-shot">
+      <div class="where-product-shot__label"><span>One day at a time. The year at a glance.</span><span>Example data</span></div>
+      <img src="{{ "where/images/wfh-log.jpg" | relURL }}" width="1100" height="820" alt="Qooee Where's Mac window with daily WFH controls above a year of coloured day squares and a queue of days to check." fetchpriority="high">
+      <figcaption>Daily hours above, your year below. Screenshots use fictional records.</figcaption>
+    </figure>
+    <ul class="where-trust" aria-label="At a glance"><li>Lives on your Mac</li><li>No account needed</li><li>You check what counts as work</li></ul>
+  </div>
+</section>
+
+<section class="where-section" id="how-it-works">
+  <div class="qooee-shell where-workflow">
+    <div class="where-section-intro"><p class="qooee-kicker">A small daily habit</p><h2>A useful log,<br>all year round.</h2><p>Record the work you actually did at home, with room for breaks, split days and corrections.</p></div>
+    <ol class="where-steps">
+      <li><span aria-hidden="true">01</span><div><h3>Record your day</h3><p>Enter your start and finish, exclude a lunch break, or use the work timer. Mark a day as No WFH when you worked elsewhere or took time off.</p></div></li>
+      <li><span aria-hidden="true">02</span><div><h3>Check it while it’s fresh</h3><p>The year overview makes patterns easy to see. The checking queue brings unfinished days together, and the ten-minute grid lets you correct a particular part of a day.</p></div></li>
+      <li><span aria-hidden="true">03</span><div><h3>Hand over a clear record</h3><p>Save an annual package with a readable report, daily CSV, detailed work blocks and a complete diary backup. Checked hours and unfinished days are shown separately.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="where-section where-detection">
+  <div class="qooee-shell where-two-column">
+    <div class="where-section-intro"><p class="qooee-kicker">A little help in the background</p><h2>Automatic when<br>you want it.</h2></div>
+    <div class="where-copy"><p>Let a familiar Wi-Fi network or display help recognise Home or Not home. Give your rules useful names, such as Home or Office. Either matching signal can identify the place; conflicting home and away signals raise a warning.</p><p>Detection and optional activity intervals give you recordings to review. You stay in charge of the hours you confirm as work. Everything can also be entered manually.</p><a class="where-text-link" href="{{ "/where/support/#automatic-recording" | relURL }}">How automatic recording works <span aria-hidden="true">→</span></a></div>
+  </div>
+</section>
+
+<section class="where-section">
+  <div class="qooee-shell where-handover">
+    <div class="where-section-intro"><p class="qooee-kicker">Your records, under your control</p><h2>Keep a copy.<br>Keep it private.</h2><p>Your diary stays on your Mac. Qooee has no remote view of your hours, notes or home rules. There is no employee dashboard, advertising or in-app analytics.</p><a class="where-text-link" href="{{ "/where/privacy/" | relURL }}">Read the privacy policy <span aria-hidden="true">→</span></a></div>
+    <div class="where-backup"><span class="where-backup__symbol" aria-hidden="true">↗</span><h3>A backup you can take with you</h3><p>Save a verified backup to an external drive or your own synced folder. On a new installation, review the file and restore all years, checking history and report settings.</p><p>Readable annual reports and CSV files let you use your records outside the app, too.</p><a href="{{ "/where/support/#backup-and-restore" | relURL }}">Backup and restore instructions <span aria-hidden="true">→</span></a></div>
+  </div>
+</section>
+
+<section class="where-section where-faq">
+  <div class="qooee-shell where-two-column">
+    <div class="where-section-intro"><p class="qooee-kicker">A few practical questions</p><h2>Before you begin.</h2></div>
+    <div>
+      <details><summary>Is Qooee Where available yet?</summary><p>Qooee Where is being prepared for the Mac App Store. We’ll add the Store link here when it is available.</p></details>
+      <details><summary>Do I have to use automatic detection?</summary><p>No. You can enter your actual WFH hours yourself. Home detection and activity recording are optional, and manual use does not require Location permission.</p></details>
+      <details><summary>Does it calculate my tax deduction?</summary><p>Qooee Where records hours and produces reports. It does not calculate a deduction or determine your eligibility. Keep any expense evidence you need separately and check the current ATO guidance for your circumstances.</p></details>
+      <details><summary>Can I use it without the internet?</summary><p>Yes. Recording, checking and exporting your diary work offline. Visiting these pages, emailing support, and downloading or updating the app use separate online services.</p></details>
+    </div>
+  </div>
+</section>
+<section class="where-contact"><div class="qooee-shell"><div><p class="qooee-kicker">Here to help</p><h2>Make the everyday bits easier.</h2><p>Find instructions for daily entries, corrections, home detection and backups.</p></div><a class="qooee-button qooee-button--primary" href="{{ "/where/support/" | relURL }}">Qooee Where support <span aria-hidden="true">→</span></a></div></section>
+{{ end }}

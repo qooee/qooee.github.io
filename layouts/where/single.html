@@ -1,0 +1,9 @@
+{{ define "main" }}
+<article class="qooee-shell where-document">
+  <header><p class="qooee-eyebrow"><a href="{{ "/where/" | relURL }}">Qooee Where</a></p><h1>{{ .Title }}</h1><p class="where-document__lede">{{ .Description }}</p>{{ with .Params.updated }}<p class="where-document__date">Last updated {{ . }}</p>{{ end }}</header>
+  <div class="where-document__grid">
+    <aside class="where-toc" aria-label="On this page"><p>On this page</p>{{ .TableOfContents }}</aside>
+    <div class="where-document__body">{{ .Content }}</div>
+  </div>
+</article>
+{{ end }}

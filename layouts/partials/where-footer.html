@@ -1,0 +1,16 @@
+<footer class="qooee-footer where-footer">
+  <div class="qooee-shell qooee-footer__inner">
+    <div>
+      {{ $logo := resources.Get "images/logos/qooee-wordmark-inverse.png" }}
+      <a class="qooee-wordmark" href="{{ "/" | relURL }}" aria-label="Qooee home"><img class="qooee-wordmark__image" src="{{ $logo.RelPermalink }}" width="300" height="103" alt="Qooee"></a>
+      <p class="qooee-footer__note">Sensible tools. A little less admin.</p>
+    </div>
+    <nav class="qooee-footer__links" aria-label="Footer">
+      <a href="{{ "/where/" | relURL }}">Qooee Where</a>
+      <a href="{{ "/where/support/" | relURL }}">Support</a>
+      <a href="{{ "/where/privacy/" | relURL }}">Privacy</a>
+      <a href="{{ "/" | relURL }}">Qooee Contacts</a>
+    </nav>
+  </div>
+  <div class="qooee-shell"><p class="qooee-footer__legal">Qooee Where is a product of evil robots pty ltd (ABN 21 667 313 911). Qooee and evil robots are registered trademarks.</p></div>
+</footer>

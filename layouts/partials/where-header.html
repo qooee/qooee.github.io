@@ -1,0 +1,16 @@
+<header class="qooee-header">
+  <div class="qooee-shell">
+    <nav class="qooee-nav where-nav" aria-label="Primary">
+      <div class="where-brand">
+        {{ $logo := resources.Get "images/logos/qooee-wordmark-primary.png" }}
+        <a class="qooee-wordmark" href="{{ "/" | relURL }}" aria-label="Qooee home"><img class="qooee-wordmark__image" src="{{ $logo.RelPermalink }}" width="300" height="103" alt="Qooee"></a>
+        <a class="where-product-name" href="{{ "/where/" | relURL }}">Where</a>
+      </div>
+      <div class="qooee-nav__group">
+        <a class="qooee-nav__link" href="{{ "/where/#how-it-works" | relURL }}">How it works</a>
+        <a class="qooee-nav__link" href="{{ "/where/support/" | relURL }}"{{ if eq .RelPermalink "/where/support/" }} aria-current="page"{{ end }}>Support</a>
+        <a class="qooee-nav__link" href="{{ "/where/privacy/" | relURL }}"{{ if eq .RelPermalink "/where/privacy/" }} aria-current="page"{{ end }}>Privacy</a>
+      </div>
+    </nav>
+  </div>
+</header>

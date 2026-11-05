@@ -8,6 +8,7 @@
 .where-brand { display: flex; gap: 20px; align-items: center; }
 .where-product-name { color: var(--qooee-navy); border-left: 1px solid var(--qooee-border); padding-left: 20px; font-size: 1.2rem; text-decoration: none; font-weight: 600; }
 .where-nav { box-shadow: none; }
+.where-nav .qooee-nav__group { flex-direction: row; align-items: center; width: auto; }
 .where-nav [aria-current] { text-decoration: underline; text-underline-offset: 6px; }
 .where-hero { padding: 76px 0 0; }
 .where-hero__intro { display: grid; grid-template-columns: 1.25fr 1fr; gap: 64px; align-items: end; margin-bottom: 44px; }
